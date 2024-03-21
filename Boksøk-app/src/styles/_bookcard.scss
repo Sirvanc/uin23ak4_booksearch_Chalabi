@@ -59,7 +59,35 @@ $lightorange: #ff9a48;
                 margin-bottom: .1rem;
             }
 
-            
+            .articleCardAmazonList{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                li{
+                    margin: 0rem;
+                    a{
+                        margin-right: .4rem;
+                  
+                }
+                a{
+                    color: $mediumorange;
+                &:hover{
+                    color: $lightorange;
+                }
+
+                .readMore{
+                    color: $white;
+                    background-color: $darkorange;
+                    display: inline-block;
+                    font-weight: 700;
+                    padding: .8rem 0;
+                    border-radius: 0 0 5px 5px;
+                    width: 100%;
+
+                    &:hover{
+                        background-color: $lightorange;
+                }
+            }
         }
     }
 }
