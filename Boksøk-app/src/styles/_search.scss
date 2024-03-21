@@ -1,0 +1,42 @@
+$white: #ffffff;
+$darkgray: #1d1d1d;
+$mediumgray: #303030;
+$lightgray: #a8a8a8;
+$mediumborange: #ff790b;
+$lightorange: #ff9a48;
+$red: rgb(255, 40, 40);
+
+
+.search{
+    display:flex;
+    flex-direction: column;
+
+    .searchbar{
+        display: flex;
+        flex-direction: column;
+
+        label{
+            margin-bottom: .5rem;
+
+        }
+
+        .submit{
+            align-self: center;
+            font-size: 16px;
+            font-weight: 100;
+            padding: .5rem 1rem;
+            border: none;
+            border-radius: 3px;
+            background-color: $mediumgray;
+
+             &:hover{
+                background-color: $mediumborange;
+                cursor: pointer;
+             }
+        }
+    }
+
+    .errorMessage{
+        color: $red;
+    }
+}
