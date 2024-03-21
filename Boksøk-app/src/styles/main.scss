@@ -1,0 +1,36 @@
+@import 'search';
+@import 'bookcard';
+@import 'bookpage';
+$white: #ffffff;
+$darkgray: #1d1d1d;
+
+
+#root{
+    width: 100%;
+    font-size: $rootsize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    header{
+        width: 100%;
+
+        }
+    }
+
+    main {
+        h1 {
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+        .searchResultsContent{
+            max-width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+ 
