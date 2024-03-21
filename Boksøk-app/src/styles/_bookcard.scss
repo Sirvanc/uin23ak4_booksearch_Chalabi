@@ -1,0 +1,65 @@
+$white: #ffffff;
+$darkgray: #1d1d1d;
+$mediumgray: #303030;
+$lightgray: #a8a8a8;
+$darkorange: #ec6a00;
+$mediumorange: #ff790b;
+$lightorange: #ff9a48;
+
+.artcleCardBody{
+    width: 430px;
+    background-color: $mediumgray;
+    margin: 2rem;
+    border-radius: 5px;
+
+    .articlecard{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        text-align: left;
+        height: 370px;
+        img {
+            margin: 0;
+            height: 370px;
+            width: 180px;
+            border-radius: 5px 0 0 0;   
+        }
+
+        div {
+            margin: 0 1rem;
+            h2{
+                font-size: 1.2rem;
+            }
+            h3 {
+                font-size: 1rem;
+                margin-bottom: 0;
+            }
+
+            h4 {
+                font-size: 1rem;
+                margin-bottom: 0;
+                margin-top: .5rem;
+
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                font-size: 1rem;
+                list-style: none;
+                margin-bottom: 0rem;
+            }
+            li {
+                margin: 0;
+
+            }
+            p{
+                font-size: 1rem;
+                margin-top: .1rem;
+                margin-bottom: .1rem;
+            }
+
+            
+        }
+    }
+}
