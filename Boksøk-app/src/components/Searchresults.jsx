@@ -1,6 +1,6 @@
-import { useState } from "react"
+import Bookcard from "./Bookcard"
 
-export default function Searchresults({content,query})
+export default function Searchresults({content,query}){
 
 return(
     <>
@@ -15,3 +15,4 @@ return(
     </section>
     </>
 )
+}

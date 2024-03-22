@@ -32,7 +32,7 @@ function App() {
       </Routes>
       
         <Routes>
-          <Route path='/book/:id' element={<BookPage />}/>}/>
+          <Route path='/book/:id' element={<BookPage />}/>
         </Routes>
       
     </Layout>
