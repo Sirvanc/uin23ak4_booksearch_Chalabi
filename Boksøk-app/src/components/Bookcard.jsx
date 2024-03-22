@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 
 
-export default function BookCard({title, year,author, rating, amazoneId, image, searchindex}){
+export default function Bookcard({title, year,author, rating, amazoneId, image, searchindex}){
 
     return(
         <article className="articleCardBody">

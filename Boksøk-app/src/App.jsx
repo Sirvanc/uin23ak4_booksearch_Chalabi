@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import {  Route, Routes } from 'react-router-dom'
 import './App.css'
 import Layout from './components/Layout'
 import Searchresults from './components/Searchresults'
@@ -12,12 +12,12 @@ function App() {
 
   const getData = async() => {
     try{
-      const response = await fetch('https://openlibrary.org/search.json?title=${query}&limit=20')
+      const response = await fetch(`https://openlibrary.org/search.json?title=${query}&limit=20`)
       const data = await response.json()
       setContent(data.docs)
       localStorage.setItem('queryData', JSON.stringify(data.docs))
     } catch{
-      console.log("error i getDat funksjon")
+      console.log("error i getData funksjon")
     }
   }
   useEffect(() => {
