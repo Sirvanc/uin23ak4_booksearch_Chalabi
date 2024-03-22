@@ -6,14 +6,14 @@ $darkorange: #ec6a00;
 $mediumorange: #ff790b;
 $lightorange: #ff9a48;
 
-.artcleCardBody{
+.articleCardBody{
     width: 430px;
     background-color: $mediumgray;
     margin: 2rem;
     border-radius: 5px;
 
-    .articlecard{
-        display: flex;
+    .articleCard{
+        display:flex;
         flex-direction: row;
         margin: 0;
         text-align: left;
@@ -22,14 +22,16 @@ $lightorange: #ff9a48;
             margin: 0;
             height: 370px;
             width: 180px;
-            border-radius: 5px 0 0 0;   
+            border-radius: 5px 0 0 0;
         }
-
+        
+        
         div {
             margin: 0 1rem;
             h2{
                 font-size: 1.2rem;
             }
+        
             h3 {
                 font-size: 1rem;
                 margin-bottom: 0;
@@ -39,20 +41,22 @@ $lightorange: #ff9a48;
                 font-size: 1rem;
                 margin-bottom: 0;
                 margin-top: .5rem;
-
             }
+
             ul {
                 display: flex;
                 flex-direction: column;
                 padding: 0;
                 font-size: 1rem;
                 list-style: none;
-                margin-bottom: 0rem;
-            }
-            li {
                 margin: 0;
+                margin-bottom: 0rem;
 
+                li{
+                    margin: 0;
+                }
             }
+
             p{
                 font-size: 1rem;
                 margin-top: .1rem;
@@ -67,27 +71,30 @@ $lightorange: #ff9a48;
                     margin: 0rem;
                     a{
                         margin-right: .4rem;
-                  
+                    }
                 }
-                a{
-                    color: $mediumorange;
+            }
+
+            a{
+                color: $mediumorange;
                 &:hover{
                     color: $lightorange;
                 }
-
-                .readMore{
-                    color: $white;
-                    background-color: $darkorange;
-                    display: inline-block;
-                    font-weight: 700;
-                    padding: .8rem 0;
-                    border-radius: 0 0 5px 5px;
-                    width: 100%;
-
-                    &:hover{
-                        background-color: $lightorange;
-                }
             }
         }
+    }
+    .readMore{
+        color: $white;
+        background-color: $darkorange;
+        display: inline-block;
+        font-weight: 700;
+        padding: .8rem 0;
+        border-radius: 0 0 5px 5px;
+        width: 100%;
+
+        &:hover{
+            background-color: $lightorange;
+        }
+
     }
 }

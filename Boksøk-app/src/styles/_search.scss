@@ -1,7 +1,7 @@
 $white: #ffffff;
 $darkgray: #1d1d1d;
-$mediumgray: #303030;
-$lightgray: #a8a8a8;
+$mediumgray: #b19249;
+$lightgray: #b5b237;
 $mediumborange: #ff790b;
 $lightorange: #ff9a48;
 $red: rgb(255, 40, 40);
@@ -17,7 +17,18 @@ $red: rgb(255, 40, 40);
 
         label{
             margin-bottom: .5rem;
+        }
 
+        .textField{
+            width: 30%;
+            align-self: center;
+            border: 1px solid $lightgray;
+            font-size: 16px;
+            background-color: transparent;
+            padding: .5rem 1rem;
+            overflow-x: hidden;
+            border-radius: 20px;
+            margin-bottom: 1rem;
         }
 
         .submit{
@@ -29,10 +40,10 @@ $red: rgb(255, 40, 40);
             border-radius: 3px;
             background-color: $mediumgray;
 
-             &:hover{
+            &:hover{
                 background-color: $mediumborange;
                 cursor: pointer;
-             }
+            }
         }
     }
 

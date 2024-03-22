@@ -3,7 +3,12 @@ import { Link } from "react-router-dom"
 
 
 
-export default function BookPage(){
+export default function BookCard({}){
 
-    return
+    return(
+        <article>
+            
+        </article>
+
+    )
 }
