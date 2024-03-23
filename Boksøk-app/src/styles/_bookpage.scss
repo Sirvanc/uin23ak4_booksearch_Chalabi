@@ -1,0 +1,82 @@
+$white: #ffffff;
+$darkgray: #ede0e0;
+$mediumgray: #303030;
+$lightgray: #f7f5f5;
+$black: #000000;
+$mediumborange: #ea6513;
+$lightorange: #d7dcdf;
+$rootsize: 20px;
+
+.bookPage{
+    margin: 0 auto;
+    max-width: 950px;
+    
+    nav{
+        text-align: left;
+        margin: 1rem 0;
+        color: $white;
+
+        
+        .homeButton{
+            color: $mediumborange;
+            text-align: left;
+            margin: .5rem;
+            &:hover{
+                color: $darkgray;
+                cursor: pointer;
+            }
+        }
+    }
+
+    section{
+        img{
+            display: block;
+            margin: auto auto;
+            margin-top: 4rem;
+            
+            
+        }
+
+        div{
+            display: block;
+            text-align: left;
+            margin: auto auto;
+            color: $white;
+
+            h2 {
+                font-size: 1.3rem;
+                margin-bottom: .5rem;
+                margin-top: 1.7rem;
+                
+            }
+
+            h3 {
+                font-size: 1.3rem;
+                margin-bottom: .5rem;
+                margin-top: 1.7rem;
+            }
+
+            h4 {
+                font-size: 1.3rem;
+                margin-bottom: .5rem;
+            }
+
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0 0 1rem 0;;
+            }
+
+            a{
+                color: $white;
+
+
+                &:hover{
+                    color: $white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
