@@ -3,17 +3,18 @@
 @import 'bookpage';
 
 $white: #ffffff;
-$darkgray: #1d1d1d;
+$cream: #c6af8d;
 $mediumgray: #303030;
 $lightgray: #a8a8a8;
 $black: #000000;
 $mediumborange: #ecec0ad1;
 $lightorange: #ff9a48;
 $red: rgb(255, 40, 40);
+$black: #000000;
 $rootsize: 20px;
 
 body {
-    background-color: $darkgray;
+    background-color: #c6af8d;
     width: 100%;
 
     #root{
@@ -24,14 +25,14 @@ body {
             width: 100%;
             
             .logo {
-                color: $white;;
+                color: $blue;
                 font-size: 5rem;
                 font-weight: 700;
              }
 
              nav{
                 margin-top: 1.5rem;
-                color: $white;
+                color: $black;
             }
         }
 
@@ -39,7 +40,7 @@ body {
             h1 {
                 font-size: 2rem;
                 margin-top: 2rem;
-                color: $white;
+                color: $black;
             }
             .searchResultsContent{
                 max-width: 100%;

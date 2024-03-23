@@ -4,6 +4,8 @@ $mediumgray: #b19249;
 $lightgray: #b5b237;
 $mediumborange: #ff790b;
 $lightorange: #ff9a48;
+$blue:#0952c0;
+$black: #000000;
 $red: rgb(255, 40, 40);
 
 
@@ -48,6 +50,6 @@ $red: rgb(255, 40, 40);
     }
 
     .errorMessage{
-        color: $mediumborange;
+        color: $black;;
     }
 }
