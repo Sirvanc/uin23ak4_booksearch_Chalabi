@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
 
-
 export default function BookPage(){
     const {id} = useParams()
     const contentIndex = parseInt(id.replaceAll(":", ""))

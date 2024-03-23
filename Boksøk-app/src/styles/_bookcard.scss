@@ -3,12 +3,12 @@ $darkgray: #1d1d1d;
 $mediumgray: #303030;
 $lightgray: #a8a8a8;
 $darkorange: #ec6a00;
-$mediumorange: #ff790b;
+$mediumorange: #ead4c1;
 $lightorange: #ff9a48;
 
 .articleCardBody{
     width: 430px;
-    background-color: $mediumgray;
+    background-color: $white;;
     margin: 2rem;
     border-radius: 5px;
 
@@ -17,13 +17,15 @@ $lightorange: #ff9a48;
         flex-direction: row;
         margin: 0;
         text-align: left;
-        height: 370px
+        height: 370px;
         img {
             margin: 0;
             height: 370px;
             width: 180px;
             border-radius: 5px 0 0 0;
         }
+        
+        
         div {
             margin: 0 1rem;
             h2{
@@ -74,16 +76,16 @@ $lightorange: #ff9a48;
             }
 
             a{
-                color: $mediumorange;
+                color: $white;
                 &:hover{
-                    color: $lightorange;
+                    color: $white;
                 }
             }
         }
     }
     .readMore{
-        color: $white;
-        background-color: $darkorange;
+        color: $darkgray;
+        background-color: $mediumorange;
         display: inline-block;
         font-weight: 700;
         padding: .8rem 0;
@@ -96,7 +98,3 @@ $lightorange: #ff9a48;
 
     }
 }
-
-
-
-

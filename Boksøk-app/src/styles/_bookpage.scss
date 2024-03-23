@@ -1,18 +1,20 @@
 $white: #ffffff;
-$darkgray: #1d1d1d;
+$darkgray: #ede0e0;
 $mediumgray: #303030;
-$lightgray: #a8a8a8;
+$lightgray: #f7f5f5;
 $black: #000000;
-$mediumborange: #512104;
-$lightorange: #48c8ff;
+$mediumborange: #ea6513;
+$lightorange: #d7dcdf;
 $rootsize: 20px;
 
 .bookPage{
     margin: 0 auto;
     max-width: 950px;
+    
     nav{
         text-align: left;
         margin: 1rem 0;
+        color: $white;
 
         
         .homeButton{
@@ -20,7 +22,7 @@ $rootsize: 20px;
             text-align: left;
             margin: .5rem;
             &:hover{
-                color: $lightorange;
+                color: $darkgray;
                 cursor: pointer;
             }
         }
@@ -31,17 +33,21 @@ $rootsize: 20px;
             display: block;
             margin: auto auto;
             margin-top: 4rem;
+            
+            
         }
 
         div{
             display: block;
             text-align: left;
             margin: auto auto;
+            color: $white;
 
             h2 {
                 font-size: 1.3rem;
                 margin-bottom: .5rem;
                 margin-top: 1.7rem;
+                
             }
 
             h3 {
@@ -62,11 +68,11 @@ $rootsize: 20px;
             }
 
             a{
-                color: $mediumborange;
+                color: $white;
 
 
                 &:hover{
-                    color: $lightorange;
+                    color: $white;
                     cursor: pointer;
                 }
             }
