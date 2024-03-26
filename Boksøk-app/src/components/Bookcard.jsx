@@ -33,7 +33,7 @@ export default function Bookcard ({title, year, author, rating, amazoneId, image
                     </ul>
                 </div>
             </div>
-            <Link to={`/book/:${searchindex}`} className="readMore">Read more</Link>
+            <Link to={`/book/:${searchindex}`} className="readMore">Mer om boka</Link>
         </article>
     )
 }
