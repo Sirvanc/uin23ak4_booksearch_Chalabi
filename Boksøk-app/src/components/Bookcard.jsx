@@ -37,3 +37,12 @@ export default function Bookcard ({title, year, author, rating, amazoneId, image
         </article>
     )
 }
+/**
+ * Denne koden definerer en React-komponent kalt Bookcard. Denne komponenten er ansvarlig for å vise informasjon om en bok,
+ *  inkludert tittel, forfatter(e), publiseringsår, vurdering, Amazon-lenker og et coverbilde hvis tilgjengelig.
+ *  Hvis coverbildet er tilgjengelig, bruker den en URL fra Open Library API for å vise det, ellers vises et standardbilde. 
+ * Forfatternavnene vises som en liste, og hvis det er flere enn tre forfattere, vises det bare de tre første, 
+ * og en "and more" -lenke legges til for å vise alle forfattere når den klikkes. Den inkluderer også lenker til Amazon-søk
+ *  basert på boktittelen og eventuelle Amazon ID-er. Til slutt er det en "Les mer om boken"-lenke som fører til en annen
+ *  rute basert på søkeindeksen.
+ */

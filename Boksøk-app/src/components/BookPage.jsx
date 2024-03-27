@@ -50,3 +50,13 @@ export default function BookPage(){
         </div>
     )
 }
+
+/**
+ * Denne koden definerer en React-komponent kalt BookPage, som viser detaljer om en bok basert på dens ID. 
+ * Først importerer den useParams-hooken fra react-router-dom, som lar komponenten hente ID-en fra URL-en.
+ *  Deretter henter den innholdet fra lokal lagring basert på den oppgitte ID-en, og viser informasjon om boken, 
+ * inkludert tittel, forfatter(e), gjennomsnittlig rangering, karakterer, språk og Amazon-lenker. Hvis det er tilgjengelig,
+ *  vises også bokens omslagsbilde. Hvis noen data mangler, vises passende fallback-tekster eller standardbilder.
+ *  Komponenten er også koblet til hjemmesiden ved hjelp av en hjem-knapp og viser en navigasjonssti fra hjemmesiden til 
+ * den aktuelle bokens tittel.
+ */
