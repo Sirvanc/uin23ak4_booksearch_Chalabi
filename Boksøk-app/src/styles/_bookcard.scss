@@ -89,13 +89,13 @@ $black: #000000;
         color: $darkgray;
         background-color: $mediumorange;
         display: inline-block;
-        font-weight: 700;
+        font-weight: 400;
         padding: .8rem 0;
         border-radius: 0 0 5px 5px;
         width: 100%;
 
         &:hover{
-            background-color: $blue;
+            background-color: $lightgray;
         }
 
     }
