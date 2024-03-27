@@ -9,7 +9,7 @@ export default function Bookcard ({title, year, author, rating, amazoneId, image
                 {image? (<img src={`https://covers.openlibrary.org/b/olid/${image}-M.jpg`} alt={`Coverbilde for ${title}`}/>) : (<img src={"https://i.imgur.com/0ZzYCzH.png"} alt={`No coverimage found for this book`}/>)}
                 <div>
                     <h2>{title}</h2>
-                    <h3>Author(s):</h3>
+                    <h3>Forfatter(s):</h3>
                     <ul className="articleCardAuthorList">
                     {author?.slice(0,3).map((item, index) =>
                          index > 1? 
@@ -21,10 +21,10 @@ export default function Bookcard ({title, year, author, rating, amazoneId, image
                             
                     )}
                     </ul>
-                    <h4>First published:</h4>
+                    <h4>Først publisert:</h4>
                     <p>{year}</p>
-                    {rating?  (<><h4>Rating:</h4> <p>{rating?.toFixed(1)}</p></>) : (<><h4>Rating:</h4> <p>none</p></>) }
-                    <h4>Amazon links:</h4>
+                    {rating?  (<><h4>Vurdering:</h4> <p>{rating?.toFixed(1)}</p></>) : (<><h4>Vurdering:</h4> <p>ingen</p></>) }
+                    <h4>Amazon-lenker:</h4>
                     <ul className="articleCardAmazonList">
                         <li><Link to={`https://www.amazon.com/s?k=${title}`}>Link 1</Link></li>
                         {amazoneId?.slice(0, 3).map((item, idx) => 

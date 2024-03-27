@@ -15,30 +15,30 @@ export default function BookPage(){
                 (<img src={"https://i.imgur.com/0ZzYCzH.png"} alt={`No coverimage found for this book`}/>)}
                 <div>
                     <h1>{book.title}</h1>
-                    <h2>Author(s):</h2>
+                    <h2>Forfatter(s):</h2>
                     <ul className="authorList">
                         {book.author_name?.map((name, index) =>
                         <li key={"author"+ index} className="author">{name}</li>
                         )}
                     </ul>
-                    <h3>Ratings:</h3>
+                    <h3>Vurderinger:</h3>
                     <ul className="ratingsList">
                         <li>Average: {book.ratings_average? (book.ratings_average.toFixed(1)):("none")}</li>
                         {book.ratings_count? (<li>Based on: {book.ratings_count} ratings</li>) : (null)}
                     </ul>
-                    <h3>Characters:</h3>
+                    <h3>Karakterer:</h3>
                     <ul className="charactersList">
                         {book.person_key?.map((char, idx) =>
                         <li key={"Char"+idx}>{char.replaceAll("_", " ")}</li>
                         )}
                     </ul>
-                    <h3>Languages:</h3>
+                    <h3>Språk:</h3>
                     <ul className="languagesList">
                         {book.language?.map((lang, idx) =>
                         <li key={"lang"+idx}>{lang}</li>
                         )}
                     </ul>
-                    <h4>Amazon links:</h4>
+                    <h4>Amazon-lenker:</h4>
                     <ul className="amazonList">
                         <li><Link to={`https://www.amazon.com/s?k=${book.title}`}>Amazon link 1</Link></li>
                         {book.amazoneId?.map((item, idx) => 
