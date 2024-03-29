@@ -1,0 +1,57 @@
+@import 'search';
+@import 'bookcard';
+@import 'bookpage';
+
+$white: #ffffff;
+$cream: #c6af8d;
+$mediumgray: #303030;
+$lightgray: #a8a8a8;
+$black: #000000;
+$mediumborange: #ecec0ad1;
+$lightorange: #ff9a48;
+$red: rgb(255, 40, 40);
+$black: #000000;
+$rootsize: 30px;
+
+body {
+    background-color: #c6af8d;
+    width: 100%;
+
+    #root{
+        width: 100%;
+        font-size: $rootsize;
+
+         header{
+            width: 100%;
+            
+            .logo {
+                color: $black;
+                font-size: 6rem;
+                font-weight: 700;
+             }
+
+             nav{
+                margin-top: 1.5rem;
+                color: $black;
+            }
+        }
+
+        main {
+            h1 {
+                font-size: 2rem;
+                margin-top: 2rem;
+                color: $blue;
+            }
+            .searchResultsContent{
+                max-width: 100%;
+                display: flex;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+         
+     }
+}
+
