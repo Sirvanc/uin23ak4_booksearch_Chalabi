@@ -12,7 +12,7 @@ export default function BookPage(){
             <nav>{<><Link to={"/"} className="homeButton">Hjem</Link> {`> ${book.title}`}</>}</nav>
             <section className="bookPageContent">
                 {book.cover_edition_key? (<img src={`https://covers.openlibrary.org/b/olid/${book?.cover_edition_key}-L.jpg`}  alt={`Coverbilde for ${book?.title}`}/>) :
-                (<img src={"https://i.imgur.com/0ZzYCzH.png"} alt={`No coverimage found for this book`}/>)}
+                (<img src={"https://www.tea-league.com/web/noimage_l.gif"} alt={`Fant ingen forsidebilde for denne boken`}/>)}
                 <div>
                     <h1>{book.title}</h1>
                     <h2>Forfatter(s):</h2>
