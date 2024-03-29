@@ -6,7 +6,7 @@ export default function Bookcard ({title, year, author, rating, amazoneId, image
     return  (
         <article className="articleCardBody">
             <div className="articleCard">
-                {image? (<img src={`https://covers.openlibrary.org/b/olid/${image}-M.jpg`} alt={`Coverbilde for ${title}`}/>) : (<img src={"https://i.imgur.com/0ZzYCzH.png"} alt={`No coverimage found for this book`}/>)}
+                {image? (<img src={`https://covers.openlibrary.org/b/olid/${image}-M.jpg`} alt={`Coverbilde for ${title}`}/>) : (<img src={"https://i.imgur.com/0ZzYCzH.png"} alt={`Fant ingen forsidebilde for denne boken`}/>)}
                 <div>
                     <h2>{title}</h2>
                     <h3>Forfatter(s):</h3>
@@ -14,7 +14,7 @@ export default function Bookcard ({title, year, author, rating, amazoneId, image
                     {author?.slice(0,3).map((item, index) =>
                          index > 1? 
                                 (<li key={"author" + index}>
-                                    <Link to={`/book/:${searchindex}`}>and more</Link>
+                                    <Link to={`/book/:${searchindex}`}>og mer</Link>
                                 </li>)
                             :
                                 (<li key={"author" + index}>{item}</li>)

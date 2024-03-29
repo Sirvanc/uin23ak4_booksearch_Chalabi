@@ -9,7 +9,7 @@ export default function BookPage(){
 
     return (
         <div className="bookPage">
-            <nav>{<><Link to={"/"} className="homeButton">Home</Link> {`> ${book.title}`}</>}</nav>
+            <nav>{<><Link to={"/"} className="homeButton">Hjem</Link> {`> ${book.title}`}</>}</nav>
             <section className="bookPageContent">
                 {book.cover_edition_key? (<img src={`https://covers.openlibrary.org/b/olid/${book?.cover_edition_key}-L.jpg`}  alt={`Coverbilde for ${book?.title}`}/>) :
                 (<img src={"https://i.imgur.com/0ZzYCzH.png"} alt={`No coverimage found for this book`}/>)}
@@ -23,8 +23,8 @@ export default function BookPage(){
                     </ul>
                     <h3>Vurderinger:</h3>
                     <ul className="ratingsList">
-                        <li>Average: {book.ratings_average? (book.ratings_average.toFixed(1)):("none")}</li>
-                        {book.ratings_count? (<li>Based on: {book.ratings_count} ratings</li>) : (null)}
+                        <li>Gjennomsnitt: {book.ratings_average? (book.ratings_average.toFixed(1)):("none")}</li>
+                        {book.ratings_count? (<li>Basert på: {book.ratings_count} rangeringer</li>) : (null)}
                     </ul>
                     <h3>Karakterer:</h3>
                     <ul className="charactersList">
