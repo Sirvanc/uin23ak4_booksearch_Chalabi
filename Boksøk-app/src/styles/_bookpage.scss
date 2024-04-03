@@ -6,20 +6,22 @@ $black: #000000;
 $mediumborange: #ea6513;
 $lightorange: #d7dcdf;
 $blue:#0952c0;
+$beige:#F1EEDC;
 $rootsize: 20px;
+
 
 .bookPage{
     margin: 0 auto;
-    max-width: 950px;
+    max-width: 650px;
     
     nav{
         text-align: left;
         margin: 1rem 0;
-        color: $black;;
+        color: $beige;;
 
         
         .homeButton{
-            color: $blue;
+            color: $beige;
             text-align: left;
             margin: .5rem;
             &:hover{
@@ -45,14 +47,14 @@ $rootsize: 20px;
             color: $black;
 
             h2 {
-                font-size: 1.3rem;
+                font-size: 1rem;
                 margin-bottom: .5rem;
                 margin-top: 1.7rem;
                 
             }
 
             h3 {
-                font-size: 1.3rem;
+                font-size: 1rem;
                 margin-bottom: .5rem;
                 margin-top: 1.7rem;
             }

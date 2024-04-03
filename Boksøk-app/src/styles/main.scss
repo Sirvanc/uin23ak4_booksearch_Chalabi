@@ -11,6 +11,7 @@ $mediumborange: #ecec0ad1;
 $lightorange: #ff9a48;
 $red: rgb(255, 40, 40);
 $black: #000000;
+$beige:#F1EEDC;
 $rootsize: 30px;
 
 body {
@@ -18,14 +19,14 @@ body {
     width: 100%;
 
     #root{
-        width: 100%;
+        width: 90%;
         font-size: $rootsize;
 
          header{
             width: 100%;
             
             .logo {
-                color: $black;
+                color: $beige;
                 font-size: 6rem;
                 font-weight: 700;
              }
@@ -40,7 +41,7 @@ body {
             h1 {
                 font-size: 2rem;
                 margin-top: 2rem;
-                color: $blue;
+                color: $beige;
             }
             .searchResultsContent{
                 max-width: 100%;
