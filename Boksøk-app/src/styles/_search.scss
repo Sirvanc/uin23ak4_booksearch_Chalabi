@@ -1,9 +1,9 @@
 $white: #ffffff;
 $darkgray: #1d1d1d;
-$mediumgray: #b19249;
+$medium_gray: #b19249;
 $lightgray: #b5b237;
-$mediumborange: #ff790b;
-$lightorange: #ff9a48;
+$medium_orange: #ff790b;
+$light_orange: #ff9a48;
 $blue:#0952c0;
 $black: #000000;
 $sea:#637A9F;
@@ -11,26 +11,28 @@ $red: rgb(255, 40, 40);
 
 
 .search{
+    font-size: large;
     display:flex;
     flex-direction: column;
 
     .searchbar{
         display: flex;
         flex-direction: column;
+        
 
         label{
-            margin-bottom: .5rem;
+            margin-bottom: 0.2rem;
         }
 
         .textField{
-            width: 30%;
+            width: 50%;
             align-self: center;
             border: 1px solid $sea;
-            font-size: 16px;
+            font-size: 15px;
             background-color: transparent;
             padding: .5rem 1rem;
             overflow-x: hidden;
-            border-radius: 20px;
+            border-radius: 30px;
             margin-bottom: 1rem;
         }
 
@@ -44,13 +46,14 @@ $red: rgb(255, 40, 40);
             background-color: $sea;
 
             &:hover{
-                background-color: $white;
+                background-color: $sea;
                 cursor: pointer;
             }
         }
     }
 
     .errorMessage{
-        color: $black;
+        font-size: 20px;
+        color: $red;
     }
 }

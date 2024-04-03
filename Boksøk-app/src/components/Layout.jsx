@@ -5,7 +5,7 @@ export default function Layout({children, setQuery}){
     return(
         <>
             <header>
-                <Link to="/" className="logo">Boksøk - Bøker til alle!</Link>
+                <Link to="/" className="logo">Biblioteksøk, Bøker til alle!</Link>
                 <nav>
                     <Searchbar setQuery = {setQuery}/>
                 </nav>
