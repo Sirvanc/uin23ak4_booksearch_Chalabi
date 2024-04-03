@@ -10,12 +10,12 @@ $beige:#F1EEDC;
 $gray:#BED7DC;
 $cream: #c6af8d;
 $sea:#637A9F;
-$rootsize: 20px;
+$rootsize: 50px;
 
 
 .bookPage{
     margin: 0 auto;
-    max-width: 550px;
+    max-width: 100%;
     
     nav{
         text-align: left;
@@ -47,7 +47,7 @@ $rootsize: 20px;
             display: block;
             text-align: left;
             margin: auto auto;
-            color: $black;
+            color: $sea;
 
             h2 {
                 font-size: 1rem;
