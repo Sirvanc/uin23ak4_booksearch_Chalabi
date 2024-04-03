@@ -7,10 +7,15 @@ $mediumorange: #ead4c1;
 $lightorange: #ff9a48;
 $blue:#0952c0;
 $black: #000000;
+$beige:#F1EEDC;
+$cream: #c6af8d;
+$gray:#BED7DC;
+$lighcream: #FFF3CF;
+$sea:#637A9F;
 
 .articleCardBody{
     width: 330px;
-    background-color: $white;;
+    background-color: $gray;
     margin: 2rem;
     border-radius: 2px;
 
@@ -31,16 +36,16 @@ $black: #000000;
         div {
             margin: 0 1rem;
             h2{
-                font-size: 0.7rem;
+                font-size: 0.9rem;
             }
         
             h3 {
-                font-size: 0.5rem;
+                font-size: 0.7rem;
                 margin-bottom: 0;
             }
 
             h4 {
-                font-size: 1rem;
+                font-size: 0.7rem;
                 margin-bottom: 0;
                 margin-top: .5rem;
             }
@@ -78,24 +83,24 @@ $black: #000000;
             }
 
             a{
-                color: $white;
+                color: $black;
                 &:hover{
-                    color: $white;
+                    color: $beige;
                 }
             }
         }
     }
     .readMore{
-        color: $darkgray;
-        background-color: $mediumorange;
+        color: $white;
+        background-color: $cream;
         display: inline-block;
-        font-weight: 300;
+        font-weight:50px;
         padding: .8rem 0;
         border-radius: 0 0 5px 5px;
         width: 100%;
 
         &:hover{
-            background-color: $lightgray;
+            background-color: $sea;
         }
 
     }

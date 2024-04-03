@@ -6,16 +6,17 @@ $white: #ffffff;
 $cream: #c6af8d;
 $mediumgray: #303030;
 $lightgray: #a8a8a8;
-$black: #000000;
 $mediumborange: #ecec0ad1;
 $lightorange: #ff9a48;
 $red: rgb(255, 40, 40);
 $black: #000000;
 $beige:#F1EEDC;
+$gray:#BED7DC;
+$sea:#637A9F;
 $rootsize: 30px;
 
 body {
-    background-color: #c6af8d;
+    background-color: $beige;
     width: 100%;
 
     #root{
@@ -26,7 +27,7 @@ body {
             width: 100%;
             
             .logo {
-                color: $beige;
+                color: $sea;
                 font-size: 6rem;
                 font-weight: 700;
              }
@@ -41,7 +42,7 @@ body {
             h1 {
                 font-size: 2rem;
                 margin-top: 2rem;
-                color: $beige;
+                color: $black;
             }
             .searchResultsContent{
                 max-width: 100%;
