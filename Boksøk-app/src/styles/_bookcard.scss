@@ -100,3 +100,14 @@ $black: #000000;
 
     }
 }
+@media screen and (min-width: 600px){
+    .articleCardBody{
+        width: 600px;
+        .articleCard{
+            height: 400px;
+            img {
+                height: 400px;
+                width: 300px;
+            }
+        }
+    }
